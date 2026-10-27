@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sangerwell-quantgap"
+version = "0.1.0"
+description = "比较压缩前后输出的差异分布，给出各层级的偏差幅度"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "sangerwell" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://sangerwell.github.io"
+Repository = "https://github.com/sangerwell/quantgap"
+Issues = "https://github.com/sangerwell/quantgap/issues"
+
+[project.scripts]
+quantgap = "quantgap:main"
+
+[tool.setuptools]
+py-modules = ["quantgap"]
